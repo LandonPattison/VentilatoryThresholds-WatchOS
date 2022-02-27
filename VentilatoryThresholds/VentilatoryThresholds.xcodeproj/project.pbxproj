@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25A0A8CA27C83127007E4808 /* VentilatoryThresholds WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 25A0A8C927C83127007E4808 /* VentilatoryThresholds WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25A0A8CF27C83129007E4808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A0A8CE27C83129007E4808 /* Assets.xcassets */; };
+		25A0A8D527C83129007E4808 /* VentilatoryThresholds WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25A0A8D427C83129007E4808 /* VentilatoryThresholds WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25A0A8DA27C83129007E4808 /* VentilatoryThresholdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0A8D927C83129007E4808 /* VentilatoryThresholdsApp.swift */; };
+		25A0A8DC27C83129007E4808 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0A8DB27C83129007E4808 /* ContentView.swift */; };
+		25A0A8E227C83129007E4808 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0A8E127C83129007E4808 /* ComplicationController.swift */; };
+		25A0A8E427C8312A007E4808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A0A8E327C8312A007E4808 /* Assets.xcassets */; };
+		25A0A8E727C8312A007E4808 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A0A8E627C8312A007E4808 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25A0A8CB27C83127007E4808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25A0A8BF27C83126007E4808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25A0A8C827C83127007E4808;
+			remoteInfo = "VentilatoryThresholds WatchKit App";
+		};
+		25A0A8D627C83129007E4808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25A0A8BF27C83126007E4808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25A0A8D327C83129007E4808;
+			remoteInfo = "VentilatoryThresholds WatchKit Extension";
+		};
+		25A0A8EF27C8312B007E4808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25A0A8BF27C83126007E4808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25A0A8D327C83129007E4808;
+			remoteInfo = "VentilatoryThresholds WatchKit Extension";
+		};
+		25A0A8F927C8312B007E4808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25A0A8BF27C83126007E4808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25A0A8C827C83127007E4808;
+			remoteInfo = "VentilatoryThresholds WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25A0A90527C8312B007E4808 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25A0A8D527C83129007E4808 /* VentilatoryThresholds WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A90927C8312B007E4808 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				25A0A8CA27C83127007E4808 /* VentilatoryThresholds WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25A0A8C527C83126007E4808 /* VentilatoryThresholds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VentilatoryThresholds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A0A8C927C83127007E4808 /* VentilatoryThresholds WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VentilatoryThresholds WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A0A8CE27C83129007E4808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25A0A8D427C83129007E4808 /* VentilatoryThresholds WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VentilatoryThresholds WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A0A8D927C83129007E4808 /* VentilatoryThresholdsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentilatoryThresholdsApp.swift; sourceTree = "<group>"; };
+		25A0A8DB27C83129007E4808 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25A0A8E127C83129007E4808 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		25A0A8E327C8312A007E4808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25A0A8E627C8312A007E4808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25A0A8E827C8312A007E4808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25A0A8E927C8312A007E4808 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		25A0A8EE27C8312B007E4808 /* VentilatoryThresholdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VentilatoryThresholdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A0A8F827C8312B007E4808 /* VentilatoryThresholdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VentilatoryThresholdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25A0A8D127C83129007E4808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A8EB27C8312B007E4808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A8F527C8312B007E4808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25A0A8BE27C83126007E4808 = {
+			isa = PBXGroup;
+			children = (
+				25A0A8CD27C83127007E4808 /* VentilatoryThresholds WatchKit App */,
+				25A0A8D827C83129007E4808 /* VentilatoryThresholds WatchKit Extension */,
+				25A0A8C627C83126007E4808 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25A0A8C627C83126007E4808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25A0A8C527C83126007E4808 /* VentilatoryThresholds.app */,
+				25A0A8C927C83127007E4808 /* VentilatoryThresholds WatchKit App.app */,
+				25A0A8D427C83129007E4808 /* VentilatoryThresholds WatchKit Extension.appex */,
+				25A0A8EE27C8312B007E4808 /* VentilatoryThresholdsTests.xctest */,
+				25A0A8F827C8312B007E4808 /* VentilatoryThresholdsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25A0A8CD27C83127007E4808 /* VentilatoryThresholds WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				25A0A8CE27C83129007E4808 /* Assets.xcassets */,
+			);
+			path = "VentilatoryThresholds WatchKit App";
+			sourceTree = "<group>";
+		};
+		25A0A8D827C83129007E4808 /* VentilatoryThresholds WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				25A0A8D927C83129007E4808 /* VentilatoryThresholdsApp.swift */,
+				25A0A8DB27C83129007E4808 /* ContentView.swift */,
+				25A0A8E127C83129007E4808 /* ComplicationController.swift */,
+				25A0A8E327C8312A007E4808 /* Assets.xcassets */,
+				25A0A8E827C8312A007E4808 /* Info.plist */,
+				25A0A8E927C8312A007E4808 /* PushNotificationPayload.apns */,
+				25A0A8E527C8312A007E4808 /* Preview Content */,
+			);
+			path = "VentilatoryThresholds WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		25A0A8E527C8312A007E4808 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				25A0A8E627C8312A007E4808 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25A0A8C427C83126007E4808 /* VentilatoryThresholds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A0A90A27C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholds" */;
+			buildPhases = (
+				25A0A8C327C83126007E4808 /* Resources */,
+				25A0A90927C8312B007E4808 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25A0A8CC27C83127007E4808 /* PBXTargetDependency */,
+			);
+			name = VentilatoryThresholds;
+			productName = VentilatoryThresholds;
+			productReference = 25A0A8C527C83126007E4808 /* VentilatoryThresholds.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		25A0A8C827C83127007E4808 /* VentilatoryThresholds WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A0A90627C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholds WatchKit App" */;
+			buildPhases = (
+				25A0A8C727C83127007E4808 /* Resources */,
+				25A0A90527C8312B007E4808 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25A0A8D727C83129007E4808 /* PBXTargetDependency */,
+			);
+			name = "VentilatoryThresholds WatchKit App";
+			productName = "VentilatoryThresholds WatchKit App";
+			productReference = 25A0A8C927C83127007E4808 /* VentilatoryThresholds WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		25A0A8D327C83129007E4808 /* VentilatoryThresholds WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A0A90227C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholds WatchKit Extension" */;
+			buildPhases = (
+				25A0A8D027C83129007E4808 /* Sources */,
+				25A0A8D127C83129007E4808 /* Frameworks */,
+				25A0A8D227C83129007E4808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VentilatoryThresholds WatchKit Extension";
+			productName = "VentilatoryThresholds WatchKit Extension";
+			productReference = 25A0A8D427C83129007E4808 /* VentilatoryThresholds WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		25A0A8ED27C8312B007E4808 /* VentilatoryThresholdsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A0A90D27C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholdsTests" */;
+			buildPhases = (
+				25A0A8EA27C8312B007E4808 /* Sources */,
+				25A0A8EB27C8312B007E4808 /* Frameworks */,
+				25A0A8EC27C8312B007E4808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25A0A8F027C8312B007E4808 /* PBXTargetDependency */,
+			);
+			name = VentilatoryThresholdsTests;
+			productName = VentilatoryThresholdsTests;
+			productReference = 25A0A8EE27C8312B007E4808 /* VentilatoryThresholdsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25A0A8F727C8312B007E4808 /* VentilatoryThresholdsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A0A91027C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholdsUITests" */;
+			buildPhases = (
+				25A0A8F427C8312B007E4808 /* Sources */,
+				25A0A8F527C8312B007E4808 /* Frameworks */,
+				25A0A8F627C8312B007E4808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25A0A8FA27C8312B007E4808 /* PBXTargetDependency */,
+			);
+			name = VentilatoryThresholdsUITests;
+			productName = VentilatoryThresholdsUITests;
+			productReference = 25A0A8F827C8312B007E4808 /* VentilatoryThresholdsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25A0A8BF27C83126007E4808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					25A0A8C427C83126007E4808 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					25A0A8C827C83127007E4808 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					25A0A8D327C83129007E4808 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					25A0A8ED27C8312B007E4808 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 25A0A8D327C83129007E4808;
+					};
+					25A0A8F727C8312B007E4808 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 25A0A8C827C83127007E4808;
+					};
+				};
+			};
+			buildConfigurationList = 25A0A8C227C83126007E4808 /* Build configuration list for PBXProject "VentilatoryThresholds" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25A0A8BE27C83126007E4808;
+			productRefGroup = 25A0A8C627C83126007E4808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25A0A8C427C83126007E4808 /* VentilatoryThresholds */,
+				25A0A8C827C83127007E4808 /* VentilatoryThresholds WatchKit App */,
+				25A0A8D327C83129007E4808 /* VentilatoryThresholds WatchKit Extension */,
+				25A0A8ED27C8312B007E4808 /* VentilatoryThresholdsTests */,
+				25A0A8F727C8312B007E4808 /* VentilatoryThresholdsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25A0A8C327C83126007E4808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A8C727C83127007E4808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A0A8CF27C83129007E4808 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A8D227C83129007E4808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A0A8E727C8312A007E4808 /* Preview Assets.xcassets in Resources */,
+				25A0A8E427C8312A007E4808 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A8EC27C8312B007E4808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A8F627C8312B007E4808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25A0A8D027C83129007E4808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A0A8DC27C83129007E4808 /* ContentView.swift in Sources */,
+				25A0A8E227C83129007E4808 /* ComplicationController.swift in Sources */,
+				25A0A8DA27C83129007E4808 /* VentilatoryThresholdsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A8EA27C8312B007E4808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A0A8F427C8312B007E4808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25A0A8CC27C83127007E4808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25A0A8C827C83127007E4808 /* VentilatoryThresholds WatchKit App */;
+			targetProxy = 25A0A8CB27C83127007E4808 /* PBXContainerItemProxy */;
+		};
+		25A0A8D727C83129007E4808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25A0A8D327C83129007E4808 /* VentilatoryThresholds WatchKit Extension */;
+			targetProxy = 25A0A8D627C83129007E4808 /* PBXContainerItemProxy */;
+		};
+		25A0A8F027C8312B007E4808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25A0A8D327C83129007E4808 /* VentilatoryThresholds WatchKit Extension */;
+			targetProxy = 25A0A8EF27C8312B007E4808 /* PBXContainerItemProxy */;
+		};
+		25A0A8FA27C8312B007E4808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25A0A8C827C83127007E4808 /* VentilatoryThresholds WatchKit App */;
+			targetProxy = 25A0A8F927C8312B007E4808 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25A0A90027C8312B007E4808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25A0A90127C8312B007E4808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25A0A90327C8312B007E4808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VentilatoryThresholds WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VentilatoryThresholds WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VentilatoryThresholds WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholds.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		25A0A90427C8312B007E4808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VentilatoryThresholds WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VentilatoryThresholds WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VentilatoryThresholds WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholds.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		25A0A90727C8312B007E4808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = VentilatoryThresholds_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "VentilatoryThresholds WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholds.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		25A0A90827C8312B007E4808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = VentilatoryThresholds_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "VentilatoryThresholds WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholds.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		25A0A90B27C8312B007E4808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		25A0A90C27C8312B007E4808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		25A0A90E27C8312B007E4808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholdsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VentilatoryThresholds WatchKit Extension.appex/VentilatoryThresholds WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		25A0A90F27C8312B007E4808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholdsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VentilatoryThresholds WatchKit Extension.appex/VentilatoryThresholds WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		25A0A91127C8312B007E4808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholdsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "VentilatoryThresholds WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		25A0A91227C8312B007E4808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LandonPattison.VentilatoryThresholdsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "VentilatoryThresholds WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25A0A8C227C83126007E4808 /* Build configuration list for PBXProject "VentilatoryThresholds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A0A90027C8312B007E4808 /* Debug */,
+				25A0A90127C8312B007E4808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25A0A90227C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholds WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A0A90327C8312B007E4808 /* Debug */,
+				25A0A90427C8312B007E4808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25A0A90627C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholds WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A0A90727C8312B007E4808 /* Debug */,
+				25A0A90827C8312B007E4808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25A0A90A27C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A0A90B27C8312B007E4808 /* Debug */,
+				25A0A90C27C8312B007E4808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25A0A90D27C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholdsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A0A90E27C8312B007E4808 /* Debug */,
+				25A0A90F27C8312B007E4808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25A0A91027C8312B007E4808 /* Build configuration list for PBXNativeTarget "VentilatoryThresholdsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A0A91127C8312B007E4808 /* Debug */,
+				25A0A91227C8312B007E4808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25A0A8BF27C83126007E4808 /* Project object */;
+}
