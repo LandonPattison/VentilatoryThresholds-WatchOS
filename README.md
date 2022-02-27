@@ -6,4 +6,4 @@ WatchOS app that allows users to visualize ventilatory thresholds on apple watch
 ## [Landon Pattison](https://www.linkedin.com/in/landonpattison/)
 ###### 
 
-#Images
+# Images
