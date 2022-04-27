@@ -7,4 +7,7 @@ WatchOS app that allows users to visualize ventilatory thresholds on apple watch
 ###### 
 
 # Images
-![Alt text](VentilatoryThresholdImages/HomeScreen.png?raw=true)
+![Alt text](VentilatoryThresholdImages/Home.png?raw=true)
+![Alt text](VentilatoryThresholdImages/Home.png?raw=true)
+![Alt text](VentilatoryThresholdImages/Home.png?raw=true)
+
