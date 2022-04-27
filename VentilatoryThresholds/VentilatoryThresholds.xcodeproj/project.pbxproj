@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252B1A9E2819FCF800E0E18A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252B1A9D2819FCF800E0E18A /* HealthKit.framework */; };
+		252B1AA02819FF2B00E0E18A /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 252B1A9F2819FF2B00E0E18A /* info.plist */; };
 		25A0A8CA27C83127007E4808 /* VentilatoryThresholds WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 25A0A8C927C83127007E4808 /* VentilatoryThresholds WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		25A0A8CF27C83129007E4808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A0A8CE27C83129007E4808 /* Assets.xcassets */; };
 		25A0A8D527C83129007E4808 /* VentilatoryThresholds WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25A0A8D427C83129007E4808 /* VentilatoryThresholds WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -74,6 +76,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		252B1A9B2819FCF800E0E18A /* VentilatoryThresholds WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VentilatoryThresholds WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		252B1A9D2819FCF800E0E18A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		252B1A9F2819FF2B00E0E18A /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		25A0A8C527C83126007E4808 /* VentilatoryThresholds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VentilatoryThresholds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A0A8C927C83127007E4808 /* VentilatoryThresholds WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VentilatoryThresholds WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A0A8CE27C83129007E4808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252B1A9E2819FCF800E0E18A /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +120,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252B1A9C2819FCF800E0E18A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				252B1A9D2819FCF800E0E18A /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		25A0A8BE27C83126007E4808 = {
 			isa = PBXGroup;
 			children = (
+				252B1A9F2819FF2B00E0E18A /* info.plist */,
 				25A0A8CD27C83127007E4808 /* VentilatoryThresholds WatchKit App */,
 				25A0A8D827C83129007E4808 /* VentilatoryThresholds WatchKit Extension */,
 				25A0A8C627C83126007E4808 /* Products */,
+				252B1A9C2819FCF800E0E18A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +162,7 @@
 		25A0A8D827C83129007E4808 /* VentilatoryThresholds WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				252B1A9B2819FCF800E0E18A /* VentilatoryThresholds WatchKit Extension.entitlements */,
 				25A0A8D927C83129007E4808 /* VentilatoryThresholdsApp.swift */,
 				25A0A8DB27C83129007E4808 /* ContentView.swift */,
 				25A0A8E127C83129007E4808 /* ComplicationController.swift */,
@@ -311,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252B1AA02819FF2B00E0E18A /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "VentilatoryThresholds WatchKit Extension/VentilatoryThresholds WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VentilatoryThresholds WatchKit Extension/Preview Content\"";
@@ -547,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "VentilatoryThresholds WatchKit Extension/VentilatoryThresholds WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VentilatoryThresholds WatchKit Extension/Preview Content\"";

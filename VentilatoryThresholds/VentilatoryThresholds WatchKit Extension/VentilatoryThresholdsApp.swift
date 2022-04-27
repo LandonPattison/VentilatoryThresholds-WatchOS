@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HealthKit
 
 @main
 struct VentilatoryThresholdsApp: App {
@@ -13,6 +14,7 @@ struct VentilatoryThresholdsApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
+                ThreshView()
             }
         }
     }
