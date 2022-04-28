@@ -10,38 +10,32 @@ import HealthKit
 
 struct ContentView: View {
    
-   @State var vt1 = "120"
-   @State var vt2 = "140"
+   @State private var vt1 : Int = 120
+   @State private var vt2 : Int = 140
    
     var body: some View {
        NavigationView{
        
           VStack(){
-             Button(action:{}){
-                HStack{
-                   Text("VT1")
-                      .foregroundColor(Color.gray)
-                      .multilineTextAlignment(.leading)
-                      .padding(.trailing)
-                      
-                   Text(vt1)
-                      .multilineTextAlignment(.trailing)
-                      .padding(.leading)
-                }
+             HStack{
+                Text("VT1")
+                   .foregroundColor(Color.white)
+                   .multilineTextAlignment(.center)
+                   .padding(.trailing)
+                TextField("", value: $vt1, formatter: NumberFormatter())
+                   .multilineTextAlignment(.trailing)
+                   .padding(.leading)
              }
-             Button(action:{}){
-                HStack{
-                   Text("VT2")
-                      .foregroundColor(Color.gray)
-                      .multilineTextAlignment(.leading)
-                      .padding(.trailing)
-                   Text(vt2)
-                      .multilineTextAlignment(.trailing)
-                      .padding(.leading)
-                   
-                }
+             HStack{
+                Text("VT2")
+                   .foregroundColor(Color.white)
+                   .multilineTextAlignment(.leading)
+                   .padding(.trailing)
+                TextField("", value: $vt2, formatter: NumberFormatter())
+                   .multilineTextAlignment(.trailing)
+                   .padding(.leading)
              }
-             NavigationLink(destination: ThreshView()) {
+             NavigationLink(destination: ThreshView(vt1: self.$vt1, vt2: self.$vt2)) {
                 Text("Start")
              }
           }
@@ -50,40 +44,43 @@ struct ContentView: View {
 }
 
 struct ThreshView: View {
-    private var healthStore = HKHealthStore()
+    private let healthStore = HKHealthStore()
     let heartRateQuantity = HKUnit(from: "count/min")
     
-    @State private var value = 120
-    
+    @State private var value = 0
+    @Binding var vt1: Int
+    @Binding var vt2: Int
+   
+   
     var body: some View {
         VStack{
             HStack{
-               if (value < 120){
-                   Text("❤️")
+               if (value < vt1){
+                   Text("♥️")
                        .font(.system(size: 50))
                   Text("Below VT1")
                   Spacer()
                }
-               if (value == 120){
-                   Text("❤️")
+               if (value == vt1){
+                   Text("♥️")
                        .font(.system(size: 50))
                   Text("Reached VT1")
                   Spacer()
                }
                
-               if (value > 120){
-                   Text("❤️")
+               if (value > vt1){
+                   Text("♥️")
                        .font(.system(size: 50))
                   Text("Above VT1")
                   Spacer()
                }
-               if (value > 140){
-                   Text("❤️")
+               if (value == vt2){
+                   Text("♥️")
                        .font(.system(size: 50))
                   Text("Reached VT2")
                   Spacer()
                }
-               if (value > 140){
+               if (value > vt2){
                    Text("❤️")
                        .font(.system(size: 50))
                   Text("Above VT2")
@@ -104,7 +101,7 @@ struct ThreshView: View {
                     .padding(.bottom, 28.0)
                 
                 Spacer()
-                
+
             }
 
         }
@@ -127,13 +124,12 @@ struct ThreshView: View {
     
     private func startHeartRateQuery(quantityTypeIdentifier: HKQuantityTypeIdentifier) {
         
-        // 1
+        
         let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
-        // 2
+        
         let updateHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, Error?) -> Void = {
             query, samples, deletedObjects, queryAnchor, error in
             
-            // 3
         guard let samples = samples as? [HKQuantitySample] else {
             return
         }
@@ -142,12 +138,9 @@ struct ThreshView: View {
 
         }
         
-        // 4
         let query = HKAnchoredObjectQuery(type: HKObjectType.quantityType(forIdentifier: quantityTypeIdentifier)!, predicate: devicePredicate, anchor: nil, limit: HKObjectQueryNoLimit, resultsHandler: updateHandler)
         
         query.updateHandler = updateHandler
-        
-        // 5
         
         healthStore.execute(query)
     }
@@ -169,6 +162,5 @@ struct ThreshView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        ThreshView()
     }
 }

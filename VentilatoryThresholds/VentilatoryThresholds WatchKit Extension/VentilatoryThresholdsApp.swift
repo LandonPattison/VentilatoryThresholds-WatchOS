@@ -14,7 +14,6 @@ struct VentilatoryThresholdsApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
-                ThreshView()
             }
         }
     }
